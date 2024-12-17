@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Документация API</title>
+  </head>
+  <body>
+    <h1>Добро пожаловать в документацию API для ars-cite.ru</h1>
+
+    <p>
+      Данное api, созданно исключительно в образовательных целях, оно позволяет
+      получить учебное расписание вуза РТУ МИРЭА.
+    </p>
+
+    <p>Для того чтобы использовать API, выполните следующие шаги:</p>
+
+    <h2>1. Получение доступа</h2>
+    <p>
+      Для доступа к API вам нужно отправить запрос на
+      <code>GET /api/access</code>
+    </p>
+
+    <h2>2. Примеры запросов</h2>
+    <p>Пример запроса к API для получения данных (расписание группы):</p>
+    <pre>
+    GET https://ars-cite.ru/api/schedule/group?param=value
+    </pre>
+
+    <h2>3. Ответ API</h2>
+    <p>Ответ API будет в формате JSON.</p>
+    <pre>
+    {
+        "data": "value",
+        "status": "success"
+    }
+    </pre>
+  </body>
+</html>
