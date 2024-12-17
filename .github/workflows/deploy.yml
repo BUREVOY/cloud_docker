@@ -51,14 +51,14 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     steps:
-      -name: Checkout repository
-      run: echo "Checkout repository"
+      - name: Checkout repository
+        run: echo "Checkout repository"
       
-      -name: Deploy to Server
-      run: echo "Deploy to Server"
+      - name: Deploy to Server
+        run: echo "Deploy to Server"
 
-      -name: Prepare Server Directory
-      run: echo "Prepare Server Directory"
+      - name: Prepare Server Directory
+        run: echo "Prepare Server Directory"
 
 
       # - name: Checkout repository
