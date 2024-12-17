@@ -52,13 +52,14 @@ jobs:
     needs: test
     steps:
       -name: Checkout repository
-      -run: echo "Checkout repository"
+      run: echo "Checkout repository"
       
       -name: Deploy to Server
-      -run: echo "Deploy to Server"
+      run: echo "Deploy to Server"
 
       -name: Prepare Server Directory
-      -run: echo "Prepare Server Directory"
+      run: echo "Prepare Server Directory"
+
 
       # - name: Checkout repository
       #   uses: actions/checkout@v2
